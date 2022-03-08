@@ -10,6 +10,10 @@ body{
     padding-top: 26px;
     padding-bottom: 25px;
 }
+header{
+    border-bottom: 1px solid #DEDEDE;
+}
+
 .container{
     margin: 0 auto;
     max-width: 1180px;
@@ -29,14 +33,18 @@ body{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    padding-left: 0;
-    gap: 46px;
+    padding-left: 10px;
+    padding-right: 103px;
+    gap: 47px;
 }
 .header-nav a{
     color: #443737;
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
+}
+.header-nav a:hover{
+    color: #FFC725;
 }
 .header-nav a::after{
     content: '';
@@ -56,6 +64,7 @@ body{
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item{
     position: relative;
@@ -86,6 +95,7 @@ body{
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -93,7 +103,7 @@ body{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
 }
 .breadcrumbs a{
     font-family: 'Open Sans', sans-serif;
@@ -101,17 +111,24 @@ body{
     text-decoration: none;
     font-size: 15px;
 }
+.breadcrumbs a:hover{
+    color: #FFC725;;
+}
+.breadcrumbs a:hover::before{
+    color: #DEDEDE;
+}
 .breadcrumbs a::before{
     content: '/';
     position: relative;
-    left: -7px ;
+    left: -4px ;
+    pointer-events: none;
 }
 .breadcrumbs li:first-child a::before{
     display: none;
 }
 .title{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 79px;
     font-weight: 700;
@@ -119,8 +136,60 @@ body{
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box{
+    background-image: url(../img/banner-box.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 100px 120px 100px;
+    margin-bottom: 40px;
+    color: white;
+}
+.banner-title{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 76px;
+    margin: 0;
+}
+.banner-title span{
+    display: block;
+    max-width: 57px;
+    padding: 5px 19.73px;
+    background-color: #F37335;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.banner-text{
+    margin-top: 10px;
+    max-width: 320px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+.banner-link{
+    background-color: #FBB731;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1E2F40;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px 26px;
+    border-radius: 5px;
+}
+.banner-link:hover{
+    background-color: transparent;
+    border: 1px solid #FBB731;
 }
