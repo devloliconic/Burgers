@@ -242,7 +242,7 @@ header{
     top: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    width: 100$;
+    width: 100%;
     height: 430px;
 }
 .menu-grid-item{
@@ -283,4 +283,7 @@ header{
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
+}
+.menu{
+    
 }
