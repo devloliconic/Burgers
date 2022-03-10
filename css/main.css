@@ -192,6 +192,7 @@ header{
 .banner-link:hover{
     background-color: transparent;
     border: 1px solid #FBB731;
+    color: #FBB731;
 }
 .menu-header{
     display: flex;
@@ -284,6 +285,64 @@ header{
     line-height: 18px;
     font-weight: 700;
 }
-.menu{
-    
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 138px;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.footer-item li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-weight: 900;
+    font-size: 20px;
+    color: #FBB731;
+    margin-top: 0;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list{
+    padding-left: 0;
+    list-style-type: none;
+}
+.footer-list a:hover{
+    color: #FBB731;
 }
