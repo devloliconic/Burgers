@@ -13,7 +13,12 @@ body{
 header{
     border-bottom: 1px solid #DEDEDE;
 }
-
+.header-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 69%;
+}
 .container{
     margin: 0 auto;
     max-width: 1180px;
@@ -33,8 +38,6 @@ header{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    padding-left: 10px;
-    padding-right: 103px;
     gap: 47px;
 }
 .header-nav a{
@@ -186,8 +189,9 @@ header{
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    padding: 20px 26px;
+    padding: 18px 24px;
     border-radius: 5px;
+    border: 1px solid #FBB731;
 }
 .banner-link:hover{
     background-color: transparent;
@@ -277,6 +281,10 @@ header{
     margin: 0 auto;
     gap: 12px;
 }
+.menu-grid-btn:hover{
+    background-color: #F37335;
+    cursor:pointer;
+}
 .menu-grid-text{
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
@@ -311,7 +319,7 @@ header{
     margin-top: 0;
 }
 
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -319,7 +327,7 @@ header{
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
@@ -330,14 +338,17 @@ header{
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel{
+    margin-top: 0;
+}
+
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a{
     font-weight: 900;
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
-}
-.footer-tel li {
-    margin-bottom: 12px;
 }
 .footer-list{
     padding-left: 0;
@@ -345,4 +356,7 @@ header{
 }
 .footer-list a:hover{
     color: #FBB731;
+}
+.footer-list-tel li a:hover{
+    color: white;
 }
