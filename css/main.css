@@ -607,7 +607,6 @@ header{
     }
     .footer-box{
         gap:0px 70px;
-        width: 756px;
         flex-wrap: wrap;
     }
     .footer-item:nth-child(2){
@@ -646,7 +645,7 @@ header{
         gap:21px;
     }
 }
-@media (max-width:567px){
+@media (max-width: 567px){
     .title{
         font-size: 38px;
     }
