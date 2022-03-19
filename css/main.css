@@ -445,11 +445,18 @@ header{
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 19px 44px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    border: 1px solid #FBB731;
+    transition: 0.2s;
+}
+.content-link:hover,
+.promo a:hover{
+    background-color: transparent;
+    color: #FBB731;
 }
 .visual {
     flex-grow: 1;
@@ -636,13 +643,74 @@ header{
     .additional-flex .menu-grid-cover{
         height: 320px;
     }
+    .wrapper{
+        max-width: 1000px;
+    }
+    .content-title span{
+        font-size: 22px;
+        margin-bottom: 7px;
+    }
+    .content-title{
+        font-size: 86px;
+    }
+    .content-text{
+        font-size:14px;
+    }
+    .content-link{
+        padding: 17px 40px;
+        font-size: 13px;
+    }
+    .content{
+        padding-top: 42px;
+        padding-bottom: 120px;
+    }
+    .visual{
+        justify-content:center;
+    }
+    .visual-bg{
+        width: 198px;
+    }
+    .main img{
+        width: 496px;
+        top: 170px;
+        right: -130px;
+    }
+    .promo-left, .promo-right {
+        padding: 44px 52px 43px 29px;
+    }
+    .promo-left .promo-description {
+        max-width: 280px;
+    }
+    .promo-right .promo-description {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .promo-right a{
+        font-size: 13px;
+        padding: 17px 40px;
+
+    }
 }
-@media (max-width: 765px){
+@media (max-width: 783px){
     nav{
         display: none;
     }
     .header{
         gap:21px;
+    }
+    .footer{
+        padding-top: 40px;
+        margin-top: 50px;
+    }
+    .footer-box{
+        flex-direction: column;
+
+    }
+    .footer-tel{
+        order: -1;
+    }
+    .footer-list-tel{
+        margin-left: 0;
     }
 }
 @media (max-width: 567px){
