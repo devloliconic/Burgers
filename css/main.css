@@ -712,6 +712,18 @@ header{
     .footer-list-tel{
         margin-left: 0;
     }
+    .visual-bg{
+        display: none;
+    }
+    .main img{
+        width: 400px;
+        top: 260px;
+        right: -130px;
+    }
+    .promo .wrapper{
+        flex-direction: column;
+        gap: 22px
+    }
 }
 @media (max-width: 567px){
     .title{
@@ -764,6 +776,12 @@ header{
     }
     .footer-list-tel{
         margin-left: 0;
+    }
+    .main img{
+        top: 300px;
+    }
+    .content-text{
+        max-width: 277px;
     }
 }
 @media (max-width: 414px){
@@ -826,6 +844,48 @@ header{
     }
     .additional-flex .menu-grid-cover{
         height: 180px;
+    }
+    .content{
+        padding-bottom: 168px;
+        padding-top: 42px;
+    }
+    .main img{
+        width: 298px;
+        top: 330px;
+        right: 200px;
+    }
+    .content-title span{
+        font-size: 14px;
+    }
+    .content-title{
+        font-size: 58px;
+        max-width: 290px;
+        line-height: 120%;
+        margin-left: 15px;
+    }
+    .content-text{
+        margin-left: 15px;
+    }
+    .content-link{
+        margin-left: 15px;
+        font-size: 13px;
+        padding: 17px 40px;
+    }
+    .promo{
+        padding-top: 102px;
+    }
+    .cost{
+        font-size: 55px;
+    }
+    .promo-description{
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .free{
+        font-size: 39px;
+    }
+    .free .promo-description{
+        font-size: 15px;
     }
 }
 /*starts*/
