@@ -231,6 +231,7 @@ header{
        -moz-appearance: none;
             appearance: none;
     flex-basis: 279px;
+    background-color: white;
     background-image: url(../img/arrow.svg);
     background-size: 12.79px 7.77px;
     background-repeat: no-repeat;
@@ -257,7 +258,7 @@ header{
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 430px;
+    height: 100%;
 }
 .menu-grid-item{
     text-align: center;
@@ -325,6 +326,9 @@ header{
 }
 .footer-item {
     flex: 0 0 auto;
+}
+.footer-item:nth-child(2) .footer-list-tel{
+    display: none;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -583,7 +587,7 @@ header{
 }
 /* adaptive */
 
-@media (min-width: 766px){
+@media (min-width: 783px){
     .header-burger{
         display: none;
     }
@@ -615,7 +619,13 @@ header{
         grid-template-columns: repeat(2,1fr);
         gap: 50px 15px;
     }
-    .footer-box{
+    .footer-tel{
+        display: none;
+    }
+    .footer-item:nth-child(2) .footer-list-tel{
+        display: block;
+    }
+    /* .footer-box{
         gap:0px 70px;
         flex-wrap: wrap;
     }
@@ -627,7 +637,7 @@ header{
     }
     .footer-list-tel{
         margin-left: 150px;
-    }
+    } */
     .menu-grid {
         grid-template-columns: repeat(2,1fr);
         gap: 50px 15px;
@@ -676,7 +686,7 @@ header{
     .main img{
         width: 496px;
         top: 170px;
-        right: -130px;
+        right: -30px;
     }
     .promo-left, .promo-right {
         padding: 44px 52px 43px 29px;
@@ -694,26 +704,48 @@ header{
 
     }
 }
+@media (max-width: 944px){
+    .content-text{
+        max-width: 277px;
+    }
+}
 @media (max-width: 783px){
+    .content{
+        max-width: 500px;
+    }
+
     nav{
         display: none;
     }
     .header{
         gap:21px;
     }
-    .footer{
-        padding-top: 40px;
-        margin-top: 50px;
+    .footer-tel{
+        display: block;
+    }
+    .footer-item:nth-child(2) .footer-list-tel{
+        display: none;
     }
     .footer-box{
-        flex-direction: column;
-
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+            "logo tel"
+            "link link"
+            "info info";
+        gap: 0;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
     }
     .footer-tel{
-        order: -1;
-    }
-    .footer-list-tel{
-        margin-left: 0;
+        grid-area: tel;
     }
     .visual-bg{
         display: none;
@@ -721,7 +753,7 @@ header{
     .main img{
         width: 400px;
         top: 260px;
-        right: -130px;
+        right: 25px;
     }
     .promo .wrapper{
         flex-direction: column;
@@ -729,6 +761,9 @@ header{
     }
 }
 @media (max-width: 567px){
+    .content{
+        max-width: 440px;
+    }
     .title{
         font-size: 38px;
     }
@@ -770,34 +805,63 @@ header{
         padding-top: 40px;
         margin-top: 50px;
     }
-    .footer-box{
-        flex-direction: column;
 
-    }
-    .footer-tel{
-        order: -1;
-    }
     .footer-list-tel{
         margin-left: 0;
     }
     .main img{
-        top: 300px;
+        top: 350px;
     }
     .content-text{
         max-width: 277px;
     }
 }
+@media (max-width: 528px){
+    .content:{
+        max-width: 200px;
+    }
+    .main img{
+        top: 400px;
+        right: 80px;
+        width: 298px;
+    }
+}
+@media (max-width: 468px){
+    .main img{
+        top: 450px;
+        right: 120px;
+        width: 298px;
+    }
+    .content-title{
+        font-size: 60px;
+    }
+}
 @media (max-width: 414px){
+    .content{
+        max-width: 300px;
+    }
     .banner-box{
         background-position: 17% center;
     }
+    .menu-title{
+        font-size: 27px;
+    }
     .menu-select{
-        padding: 8px 31px 8px 8px;
+        padding: 8px 20px 8px 8px;
         max-width: 120px;
         font-size: 12px;
     }
     .meni-grid-title{
         font-size: 16px;
+    }
+    .content-title span {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .main img{
+        top: 450px;
+        right: 10px;
+        width: 298px;
     }
 }
 @media (max-width: 360px){
@@ -807,7 +871,7 @@ header{
         background-size: contain;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 375px){
     .header{
         margin-bottom: 0;
         padding-bottom: 20px;
@@ -849,13 +913,14 @@ header{
         height: 180px;
     }
     .content{
+        max-width: 360px;
         padding-bottom: 168px;
         padding-top: 42px;
     }
     .main img{
-        width: 298px;
+        width: 275px;
         top: 330px;
-        right: 200px;
+        right: 10px;
     }
     .content-title span{
         font-size: 14px;
