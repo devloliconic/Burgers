@@ -646,12 +646,18 @@ header{
         overflow: hidden;
         height: 558px;
     }
-    .additional-flex{
-        grid-template-columns:repeat(3,307px);
-        gap: 6px;
+    .additional-menu .container{
+        padding-right: 0;
+    }
+    .additional-menu .menu-grid{
+        display: flex;
+        width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
         height: 558px;
+    }
+    .additional-menu .menu-grid-item{
+        flex: 0 0 350px;
     }
     .additional-flex .menu-grid-cover{
         height: 320px;
@@ -722,6 +728,7 @@ header{
     }
     .footer-tel{
         display: block;
+        text-align: right;
     }
     .footer-item:nth-child(2) .footer-list-tel{
         display: none;
@@ -788,7 +795,7 @@ header{
         font-size: 20px;
     }
     .menu-grid-cover{
-        height: 240px;
+        height: 50vw;
         margin-bottom: 10px;
     }
     .additional-flex{
@@ -817,19 +824,19 @@ header{
     }
 }
 @media (max-width: 528px){
-    .content:{
+    .content{
         max-width: 200px;
     }
     .main img{
         top: 400px;
-        right: 80px;
+        right: 40px;
         width: 298px;
     }
 }
 @media (max-width: 468px){
     .main img{
         top: 450px;
-        right: 120px;
+        right: 40px;
         width: 298px;
     }
     .content-title{
@@ -893,7 +900,7 @@ header{
         font-size: 12px;
     }
     .menu-grid-cover{
-        height: 180px;
+        height: 50vw;
         margin-bottom: 10px;
     }
     .meni-grid-title{
