@@ -592,6 +592,9 @@ header{
     .header-burger{
         display: none;
     }
+    nav{
+        display: none;
+    }
 }
 
 @media (max-width: 1000px){
@@ -724,9 +727,7 @@ header{
         max-width: 500px;
     }
 
-    nav{
-        display: none;
-    }
+ 
     .header{
         gap:21px;
     }
@@ -853,7 +854,7 @@ header{
         margin-bottom: 50px;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 415px){
     .additional-menu{
         overflow: hidden;
         height: 500px;
