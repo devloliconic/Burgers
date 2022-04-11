@@ -586,11 +586,14 @@ header{
     top: 20px;
     right: 20px;
 }
+.header-burger{
+    display: none;
+}
 /* adaptive */
 
-@media (min-width: 783px){
+@media (max-width: 783px){
     .header-burger{
-        display: none;
+        display: block;
     }
     nav{
         display: none;
@@ -644,7 +647,7 @@ header{
     } */
     .additional-menu{
         overflow: hidden;
-        height: 900px;
+        height: 83vw;
     }
     .additional-menu .container{
         padding-right: 0;
@@ -653,7 +656,7 @@ header{
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 658px;
+        height: 83vw;
         padding-right: 15px;
     }
     .additional-menu .menu-grid-item{
@@ -718,7 +721,7 @@ header{
 @media (max-width: 783px){
     .additional-menu{
         overflow: hidden;
-        height: 700px;
+        height: 92vw;
     }
     .additional-menu .menu-grid-item{
         flex: 0 0 280px;
@@ -775,7 +778,10 @@ header{
 @media (max-width: 567px){
     .additional-menu{
         overflow: hidden;
-        height: 600px;
+        height: 120vw;
+    }
+    .additional-menu .menu-grid{
+        height: 120vw;
     }
     .additional-menu .menu-grid-item{
         flex: 0 0 230px;
@@ -854,13 +860,13 @@ header{
         margin-bottom: 50px;
     }
 }
-@media (max-width: 415px){
+@media (max-width: 414px){
     .additional-menu{
         overflow: hidden;
-        height: 500px;
-    }
+        height: 130vw;
+    } 
     .content{
-        max-width: 300px;
+        max-width: 300px; 
     }
     .banner-box{
         background-position: 17% center;
