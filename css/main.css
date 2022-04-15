@@ -478,7 +478,7 @@ header{
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
-    width: 829px;
+    width: 800px;
     position: absolute;
     right: -168px;
     top: -90px;
@@ -590,7 +590,14 @@ header{
     display: none;
 }
 /* adaptive */
+@media (max-width: 1551px){
+    .main img{
+        top: -10px;
+        right: -2vw;
+        width: 600px;
+    }
 
+}
 @media (max-width: 783px){
     .header-burger{
         display: block;
@@ -600,7 +607,7 @@ header{
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1257px){
     .content{
         max-width: 738px;
     }
@@ -690,12 +697,12 @@ header{
         justify-content:center;
     }
     .visual-bg{
-        width: 198px;
+        width: 15vw;
     }
     .main img{
         width: 496px;
         top: 170px;
-        right: -30px;
+        right: -20px;
     }
     .promo-left, .promo-right {
         padding: 44px 52px 43px 29px;
@@ -713,12 +720,21 @@ header{
 
     }
 }
+@media (max-width: 1059px){
+    .main img{
+        right: 30px;
+        width: 450px;
+    }
+}
 @media (max-width: 944px){
     .content-text{
         max-width: 277px;
     }
 }
 @media (max-width: 783px){
+    .main img{
+        display: none;
+    }
     .additional-menu{
         overflow: hidden;
         height: 92vw;
@@ -734,6 +750,21 @@ header{
     .header{
         gap:21px;
     }
+
+    .visual-bg{
+        display: none;
+    }
+    .main img{
+        width: 400px;
+        top: 260px;
+        right: 25px;
+    }
+    .promo .wrapper{
+        flex-direction: column;
+        gap: 22px
+    }
+}
+@media (max-width:629px){
     .footer-tel{
         display: block;
         text-align: right;
@@ -762,26 +793,15 @@ header{
     .footer-tel{
         grid-area: tel;
     }
-    .visual-bg{
-        display: none;
-    }
-    .main img{
-        width: 400px;
-        top: 260px;
-        right: 25px;
-    }
-    .promo .wrapper{
-        flex-direction: column;
-        gap: 22px
-    }
 }
 @media (max-width: 567px){
+    
     .additional-menu{
         overflow: hidden;
         height: 120vw;
     }
     .additional-menu .menu-grid{
-        height: 120vw;
+        height: 125vw;
     }
     .additional-menu .menu-grid-item{
         flex: 0 0 230px;
@@ -822,6 +842,7 @@ header{
     .footer{
         padding-top: 40px;
         margin-top: 50px;
+        margin-top: 80px;
     }
 
     .footer-list-tel{
@@ -859,8 +880,12 @@ header{
     .banner-box{
         margin-bottom: 50px;
     }
+    .additional-menu{
+        overflow: hidden;
+        height: 126vw;
+    } 
 }
-@media (max-width: 414px){
+@media (max-width: 415px){
     .additional-menu{
         overflow: hidden;
         height: 130vw;
